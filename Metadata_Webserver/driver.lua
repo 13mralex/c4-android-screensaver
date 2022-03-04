@@ -545,20 +545,25 @@ function populateMetadata() {
 print("Driver Loaded..." .. os.date())
 
 project = {}
-projectInfo = C4:GetProjectItems()
-projectInfo = C4:ParseXml(projectInfo)
-
-data = projectInfo.ChildNodes[1].ChildNodes[5].ChildNodes
-for i,v in pairs(data) do
-     project[v["Name"]] = v.Value
-end
-
-projectJson = C4:JsonEncode(project)
 
 
 -----------------------------------------------------
 ------------------------ INIT ------------------------
 -----------------------------------------------------
+
+function OnDriverInit()
+    print("Driver init...")
+
+    projectInfo = C4:GetProjectItems()
+    projectInfo = C4:ParseXml(projectInfo)
+
+    data = projectInfo.ChildNodes[1].ChildNodes[5].ChildNodes
+    for i,v in pairs(data) do
+	    project[v["Name"]] = v.Value
+    end
+
+    projectJson = C4:JsonEncode(project)
+end
 
 gRecvBuf = ""
 gDbgTimer = 0
