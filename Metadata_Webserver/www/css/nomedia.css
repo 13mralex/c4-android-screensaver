@@ -1,0 +1,23 @@
+@charset "UTF-8";
+#metadata-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 66vw;
+    visibility: hidden;
+    margin-top: 5vmin;
+}
+
+#clock {
+    font-size: 30vmin;
+}
+
+#ampm {
+    font-size: 12vmin;
+}
+
+#time {
+    gap: 15vmin;
+	visibility: visible;
+}

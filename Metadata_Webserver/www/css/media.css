@@ -1,0 +1,52 @@
+@charset "UTF-8";
+#metadata-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 66vw;
+    visibility: visible;
+    margin-right: 3%;
+}
+
+#metadata-text-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    /* height: 25%; */
+    margin-bottom: 10%;
+    margin-top: 5.5vmin;
+    gap: 1vh;
+    text-align: center;
+}
+
+#art-container{
+    /* height: 60vh; */
+    margin-top: 24.5vmin;
+    display: flex;
+    /* vertical-align: baseline; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#art {
+    position: relative;
+    width: 40vmin;
+    /* height: 40vmin; */
+    /* border: solid; */
+    /* border-color: white; */
+    /* opacity: 50%; */
+}
+
+#title {
+    font-size: 6.9vmin;
+}
+
+#artist, #album {
+    font-size: 5.35vmin;
+}
+
+#title, #artist, #album {
+    font-weight: 300;
+}

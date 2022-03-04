@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>C4-Android-Screensaver</title>
+<script type="text/javascript" src="js/metadata.js"></script>
+<link id="main-stylesheet" href="css/style.css" rel="stylesheet" type="text/css">
+<link id="layout-stylesheet" href="css/media.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body onLoad="populateMetadata()">
+    <div id="main-container">
+        <div id="date-time-temp-container">
+            <div id="time">
+                <span class="text" id="clock"></span>
+                <span class="text" id="ampm"></span>
+            </div>
+            <div id="date">
+                <span class="text" id="dayofweek"></span>
+                <span class="text" id="day"></span>
+                <span class="text" id="month"></span>
+            </div>
+            <div id="temp">
+                <span class="text" id="temp-num"></span>
+                <span class="text" id="scale"></span>
+            </div>
+        </div>
+        <div id="metadata-container">
+            
+            <div id="art-container">
+                <img id="art" src="" alt=""/>
+            </div>
+            
+            <div id="metadata-text-container">
+                <span id="album" class="text"></span>
+                <span id="artist" class="text"></span>
+                <span id="title" class="text"></span>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

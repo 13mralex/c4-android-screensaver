@@ -1,0 +1,67 @@
+@charset "UTF-8";
+body {
+    background-color: black;
+    /* background-image: url("template.png"); */
+    /* background-size: 100% 100%; */
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+#main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: opacity 1s;
+    /* margin-left: 1%; */
+    /* gap: 1%; */
+    /* margin-right: 3%; */
+}
+
+#main-container.fade {
+    opacity: 0;
+}
+
+#date-time-temp-container {
+    width: 33vw;
+    display: flex;
+    flex-direction: column;
+    gap: 13.5vmin;
+    /* align-items: center; */
+    justify-content: center;
+    margin-left: 3%;
+    height: 100%;
+    margin-top: 2vh;
+}
+
+#time, #date, #temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5vmin;
+    line-height: 4.5vmin;
+    /* margin-top: 3vh; */
+}
+
+.text {
+    color: white;
+    font-size: 3.5vw;
+    font-family: "Roboto";
+    font-weight: 100;
+}
+
+#clock, #day, #temp-num {
+    font-size: 12vmin;
+}
+
+#ampm, #dayofweek, #month, #scale {
+    font-size: 3.5vmin;
+}
+
+#temp, #time {
+    margin-top: 4vmin;
+}
