@@ -5,6 +5,9 @@
 	- Date
 	- Weather
 	- Current Media
+
+<img src="https://github.com/13mralex/c4-android-screensaver/blob/main/images/Capture1.PNG?raw=true" width=45%></img>
+<img src="https://github.com/13mralex/c4-android-screensaver/blob/main/images/Capture.PNG?raw=true" width=45%></img>
 ## How it works:
  - Find an applicable app from the Play Store
 	- [This](https://m.apkpure.com/web-screensaver/se.andreasottesen.WebScreensaver) is the one I use
@@ -23,7 +26,7 @@
 	- Need to display device name/icon when this happens
 ## Troubleshooting:
  - If the screensaver is not displaying correctly:
-  - <img src="https://raw.githubusercontent.com/13mralex/c4-android-screensaver/main/images/030722171537.png" width=500px></img>
+  - <img src="https://raw.githubusercontent.com/13mralex/c4-android-screensaver/main/images/030722171537.png" width=45%></img>
   	- WebView needs to be updated, which can be downloaded from the Play store or [here](https://www.apkmirror.com/apk/google-inc/android-system-webview/).
   	- After installing, enable & open Developer Options
   	- Scroll down and find WebView Implementation and switch to the higher version
