@@ -23,7 +23,7 @@
 	- Need to display device name/icon when this happens
 ## Troubleshooting:
  - If the screensaver is not displaying correctly:
- - ![](https://github.com/13mralex/c4-android-screensaver/images/030722171537.png | width=200)
-  - WebView needs to be updated, which can be downloaded from the Play store or [here](https://www.apkmirror.com/apk/google-inc/android-system-webview/).
-  - After installing, enable & open Developer Options
-  - Scroll down and find WebView Implementation and switch to the higher version
+  - <img src="https://raw.githubusercontent.com/13mralex/c4-android-screensaver/main/images/030722171537.png" width=500px></img>
+  	- WebView needs to be updated, which can be downloaded from the Play store or [here](https://www.apkmirror.com/apk/google-inc/android-system-webview/).
+  	- After installing, enable & open Developer Options
+  	- Scroll down and find WebView Implementation and switch to the higher version
