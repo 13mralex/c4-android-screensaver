@@ -1,51 +1,51 @@
-﻿<devicedata>
-    <copyright>Copyright 2011 Control4.  All rights reserved.</copyright>
-    <manufacturer>Control4</manufacturer>
-    <model>Metadata Webserver</model>
-    <creator>Control4</creator>
-    <created>2/4/2022 8:00:00 PM</created>
-    <modified>2/4/2022 8:00:00 PM</modified>
-    <name>Metadata Webserver</name>
-    <small>devices_sm\C4.gif</small>
-    <large>devices_lg\C4.gif</large>
-    <control>lua_gen</control>
-    <driver>DriverWorks</driver>
-    <controlmethod>ip</controlmethod>
-    <proxy>webserver</proxy>
-    <combo>true</combo>
-    <events>
-        <event>
-            <id>1</id>
-            <name>Command Received</name>
-            <description>Received a command over web connection</description>
-        </event>
-    </events>
-    <config>
-        
-        <properties>
-            <property>
-                <name>Debug Mode</name>
-                <type>LIST</type>
-                <items>
-                    <item>Off</item>
-                    <item>Print</item>
-                    <item>Log</item>
-                    <item>Print and Log</item>
-                </items>
-                <default>Off</default>
-                <readonly>false</readonly>
-            </property>
-        </properties>
-        <actions>
-            <action>
-                <name>Default Action</name>
-                <command>DEFAULT_ACTION</command>
-            </action>
-        </actions>
-        <commands />
-        <script file="driver.lua" />
-    <documentation file="documentation.rtf" /></config>
-    <connections />
-    <capabilities />
-    <version>1</version>
+<devicedata>
+  <copyright>Copyright 2011 Control4.  All rights reserved.</copyright>
+  <manufacturer>Control4</manufacturer>
+  <model>Metadata Webserver</model>
+  <creator>Alex Martin</creator>
+  <created>2/4/2022 8:00:00 PM</created>
+  <modified>03/18/2022 4:18 PM</modified>
+  <name>Metadata Webserver</name>
+  <small>devices_sm\C4.gif</small>
+  <large>devices_lg\C4.gif</large>
+  <control>lua_gen</control>
+  <driver>DriverWorks</driver>
+  <controlmethod>ip</controlmethod>
+  <proxy>webserver</proxy>
+  <combo>true</combo>
+  <events>
+    <event>
+      <id>1</id>
+      <name>Command Received</name>
+      <description>Received a command over web connection</description>
+    </event>
+  </events>
+  <config>
+    <properties>
+      <property>
+        <name>Debug Mode</name>
+        <type>LIST</type>
+        <items>
+          <item>Off</item>
+          <item>Print</item>
+          <item>Log</item>
+          <item>Print and Log</item>
+        </items>
+        <default>Off</default>
+        <readonly>false</readonly>
+      </property>
+    </properties>
+    <actions>
+      <action>
+        <name>Default Action</name>
+        <command>DEFAULT_ACTION</command>
+      </action>
+    </actions>
+    <commands />
+    <script file="driver.lua" />
+    <documentation file="documentation.rtf" />
+  </config>
+  <connections />
+  <capabilities />
+  <version>1</version>
 </devicedata>

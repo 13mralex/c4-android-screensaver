@@ -554,15 +554,27 @@ project = {}
 function OnDriverInit()
     print("Driver init...")
 
+    function get(data,name)
+	   return data:match("<"..name..">(.-)</"..name..">")
+    end
+
+
     projectInfo = C4:GetProjectItems()
+
+    projectInfo = get(projectInfo,"itemdata")
+    projectInfo = "<itemdata>"..projectInfo.."</itemdata>"
     projectInfo = C4:ParseXml(projectInfo)
 
-    data = projectInfo.ChildNodes[1].ChildNodes[5].ChildNodes
-    for i,v in pairs(data) do
-	    project[v["Name"]] = v.Value
+    project = {}
+    
+    for i,v in pairs(projectInfo["ChildNodes"]) do
+		   project[v["Name"]] = v.Value
     end
 
     projectJson = C4:JsonEncode(project)
+
+    --print(projectJson)
+
 end
 
 gRecvBuf = ""
