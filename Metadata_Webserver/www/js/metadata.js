@@ -58,10 +58,17 @@ function updateMetadata() {
         if (jsonData.img == "") {
             jsonData.img = "png/cover_art_default.png"
         }
-        
-        document.getElementById("title").innerHTML = jsonData.title || "";
-        document.getElementById("artist").innerHTML = jsonData.artist || "";
-        document.getElementById("album").innerHTML = jsonData.album || "";
+
+        if (!jsonData.title && !jsonData.artist && !jsonData.album) {
+            document.getElementById("title").innerHTML = jsonData.devicename
+            document.getElementById("artist").innerHTML = "";
+            document.getElementById("album").innerHTML = "";
+        } else {
+            document.getElementById("title").innerHTML = jsonData.title || "";
+            document.getElementById("artist").innerHTML = jsonData.artist || "";
+            document.getElementById("album").innerHTML = jsonData.album || "";
+        }
+
         document.getElementById("art").src = jsonData.img;
         media = true
         oldData = data
